@@ -108,6 +108,11 @@ module.exports = {
             url: `https://rpc.scroll.io/`,
             accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : {mnemonic: mnemonic()},
         },
+        optimism_sepolia: {
+            url: "https://sepolia.optimism.io",
+            accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : {mnemonic: mnemonic()},
+            chainId: 11155420,
+        },
     },
     sourcify: {
         enabled: true,
