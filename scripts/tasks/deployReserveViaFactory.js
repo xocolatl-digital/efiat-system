@@ -17,7 +17,6 @@ const deployReserveViaFactory = async (
     console.log("Deploying reserve via Factory for reserve asset:", reserveAssetAddr);
     console.log("PriceFeed1", pricefeedAddr1);
     console.log("PriceFeed2", pricefeedAddr2);
-    console.log("oracleFactory", oracleFactory);
 
     let oracleAddrArg = pricefeedAddr1;
     const allowedTimeout = 234000; // Due to market closure on weekends

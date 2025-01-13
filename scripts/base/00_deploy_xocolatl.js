@@ -7,7 +7,6 @@ const {handOverDefaultAdmin} = require("../tasks/rolesHandOver");
 const deployBackedAsset = async () => {
     console.log("\n\n 📡 Deploying...\n");
     const xoc = await deployXocolatl();
-    console.log("xoc is", xoc);
     await handOverDefaultAdmin(xoc);
 };
 
