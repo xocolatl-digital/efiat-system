@@ -1,7 +1,7 @@
 const {ethers} = require("hardhat");
 const {ASSETS, LADAO_MULTISIGS} = require("../const");
 
-const VERSION = "0.0";
+const VERSION = "2.0.0";
 
 const RESERVE_CAPS = {
     weth: {

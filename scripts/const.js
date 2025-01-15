@@ -263,7 +263,7 @@ const ORACLE_CONTRACTS = {
         ethusd: "0x6bF14CB0A831078629D993FDeBcB182b21A8774C",
     },
     optimismSepolia: {
-        sequencer: "0x4200000000000000000000000000000000000011",
+        sequencer: "0xAaa227BEC672216a007755878f6b5bB8776f52CC", // mock sequencer uptime contract
         pyth: "0x0708325268dF9F66270F1401206434524814508b",
         ethusd: "0x61Ec26aA57019C486B10502285c5A3D4A4750AD7",
     },
