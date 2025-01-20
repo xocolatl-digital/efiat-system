@@ -1,5 +1,5 @@
 const {NETWORK, setDeploymentsPath, setPublishPath, publishUpdates} = require("../utils");
-const {VERSION} = require("./utils_sepolia");
+const {VERSION} = require("./utils_optimism");
 
 const {deployXocolatl} = require("../tasks/deployXocolatl");
 const {handOverDefaultAdmin} = require("../tasks/rolesHandOver");
