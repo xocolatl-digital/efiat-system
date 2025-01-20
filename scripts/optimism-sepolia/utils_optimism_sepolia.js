@@ -7,10 +7,16 @@ const RESERVE_CAPS = {
     weth: {
         defaultInitialLimit: ethers.parseUnits("5", 18),
     },
+    wsteth: {
+        defaultInitialLimit: ethers.parseUnits("5", 18),
+    },
+    op: {
+        defaultInitialLimit: ethers.parseUnits("5000", 18),
+    },
 };
 
-const WNATIVE = ASSETS.optimism.weth.address;
-const TREASURY = LADAO_MULTISIGS.optimism;
+const WNATIVE = ASSETS.optimismSepolia.weth.address;
+const TREASURY = LADAO_MULTISIGS.optimismSepolia;
 
 module.exports = {
     VERSION,
