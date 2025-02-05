@@ -108,6 +108,11 @@ module.exports = {
             url: `https://rpc.scroll.io/`,
             accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : {mnemonic: mnemonic()},
         },
+        optimism_sepolia: {
+            url: "https://sepolia.optimism.io",
+            accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : {mnemonic: mnemonic()},
+            chainId: 11155420,
+        },
     },
     sourcify: {
         enabled: true,
@@ -137,6 +142,14 @@ module.exports = {
                 urls: {
                     apiURL: "https://api.basescan.org/api",
                     browserURL: "https://basescan.org/",
+                },
+            },
+            {
+                network: "optimismSepolia",
+                chainId: 11155420,
+                urls: {
+                    apiURL: "https://api-sepolia-optimistic.etherscan.io/api",
+                    browserURL: "https://sepolia-optimism.etherscan.io/",
                 },
             },
         ],

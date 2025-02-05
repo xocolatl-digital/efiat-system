@@ -10,6 +10,7 @@ const LADAO_MULTISIGS = {
     linea: "",
     polygonzkevm: "",
     scroll: "0x840A6f02e31eBa9761Ceb18471524B71B506E7F4",
+    optimismSepolia: "0x5B2aE816E92bE1b8022dC13eAB9fd77e3232e9C8",
 };
 
 const CONTRACT_DEPLOYER_FACTORY = "0xF8faF9319e5CDDfda173B0a6461f19765AAAbf03";
@@ -192,6 +193,14 @@ const ASSETS = {
             },
         },
     },
+    optimismSepolia: {
+        weth: {
+            address: "0x4200000000000000000000000000000000000006",
+            storageSlots: {
+                balanceOf: 3,
+            },
+        },
+    },
 };
 
 const ORACLE_CONTRACTS = {
@@ -253,6 +262,11 @@ const ORACLE_CONTRACTS = {
         sequencer: "0x45c2b8C204568A03Dc7A2E32B71D67Fe97F908A9",
         pyth: "0xA2aa501b19aff244D90cc15a4Cf739D2725B5729",
         ethusd: "0x6bF14CB0A831078629D993FDeBcB182b21A8774C",
+    },
+    optimismSepolia: {
+        sequencer: "0xAaa227BEC672216a007755878f6b5bB8776f52CC", // mock sequencer uptime contract
+        pyth: "0x0708325268dF9F66270F1401206434524814508b",
+        ethusd: "0x61Ec26aA57019C486B10502285c5A3D4A4750AD7",
     },
 };
 
